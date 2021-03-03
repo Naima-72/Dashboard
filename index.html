@@ -4,30 +4,29 @@
             <meta charset="UTF-8" />
             <meta name=" viewport" content="width=device-width, initial-scale=1">
             <title> DashBoard </title>
-            <link href="dashboard.css" type="text/css" rel="stylesheet" /> 
-
-                
+            <link href="style.css" type="text/css" rel="stylesheet" />                
 		</head>
-
         <body>
+            <!--opmaak textbox en logo SpaceX-->
             <div class= "introbox">
                 <img class = "SpaceXlogo" src="SpaceXlogo.png" alt="Space X">
                 
                 <p class= "introtext"> Welcome astronauts to the dashboard of our spaceship to Mars! 
                     Here you will find important information about the the trip and progress.
                 </p>
-            </div>
-        
+            </div> 
 
-            <!--div class="flex-container">---> 
+            <!--de lijn grafiek-->
             <div class="linebox lijn">
                 <canvas id="linechart" ></canvas>
             </div>
 
+            <!--Cirkel grafiek-->
             <div class="linebox rond">
                 <canvas id="circlegraph" ></canvas>
             </div>
-            
+
+            <!--balk grafiek-->
             <div class="linebox balk">
                 <canvas id="bar"></canvas>
             </div>

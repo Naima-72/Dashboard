@@ -39,7 +39,7 @@ var barChart = document.getElementById('bar').getContext('2d');
 var barChart = new Chart(barChart, {
     type: 'bar',
     data: {
-        labels: ['Hydroxe,', 'C02', 'Cardoxen'],
+        labels: ['Hydroxen', 'C02', 'Cardoxen'],
         datasets: [{
             label: 'Fuel',
             backgroundColor: [ '#dcedc1', '#5a324b', '#62b7e5'],

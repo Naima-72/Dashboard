@@ -1,12 +1,19 @@
 body {
     background-image: url("potentialbackground1.jpg");
     font-family: Microsoft YaHei UI;
-}
+    display: grid; 
+    grid-template-columns: 1fr;
 
+    grid-template-areas: 
+      "header"
+      "lijn "
+      "balk";  
+}
+ 
 .introbox{
   grid-area: header;
 }
-
+ 
 .lijn {
   grid-area: lijn;
 }
@@ -26,7 +33,7 @@ body {
 
 }
 
-
+/*opmaak intro box */ 
 .introbox {
   background-color: #e2e2e2e7;
   margin: auto;
@@ -49,26 +56,22 @@ body {
 }
 
 
-@media only screen and (min-width:768px) and (max-width: 1365){
-  body {
-    display: grid; 
+@media only screen and (min-width:768px) and (max-width: 1365px){
+  body {    
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas: 
       "header header"
-      "rond rond"
-      "balk balk"
-      "lijn lijn";  
+      "lijn rond"
+      "balk balk";  
   }
 /*Het werkt niet*/
-
 }
 
 
 @media only screen and (min-width:1366px) and (max-width: 1919px) {
 
   body {
-    display: grid; 
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas: 
@@ -83,7 +86,6 @@ body {
 
 @media only screen and (min-width:1920px)  {
  body {
-    display: grid; 
     grid-template-columns: 1fr 1fr;
     
     grid-template-areas: 
