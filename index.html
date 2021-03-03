@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html lang="nl">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name=" viewport" content="width=device-width, initial-scale=1">
+            <title> DashBoard </title>
+            <link href="dashboard.css" type="text/css" rel="stylesheet" /> 
+
+                
+		</head>
+
+        <body>
+            <div class= "introbox">
+                <img class = "SpaceXlogo" src="SpaceXlogo.png" alt="Space X">
+                
+                <p class= "introtext"> Welcome astronauts to the dashboard of our spaceship to Mars! 
+                    Here you will find important information about the the trip and progress.
+                </p>
+            </div>
+        
+
+            <!--div class="flex-container">---> 
+            <div class="linebox lijn">
+                <canvas id="linechart" ></canvas>
+            </div>
+
+            <div class="linebox rond">
+                <canvas id="circlegraph" ></canvas>
+            </div>
+            
+            <div class="linebox balk">
+                <canvas id="bar"></canvas>
+            </div>
+
+                    
+                    
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+            <script type="text/javascript" src="jsdashboard.js"></script>
+                
+        </body>
+</html>

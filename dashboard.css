@@ -1,0 +1,95 @@
+body {
+    background-image: url("potentialbackground1.jpg");
+    font-family: Microsoft YaHei UI;
+}
+
+.introbox{
+  grid-area: header;
+}
+
+.lijn {
+  grid-area: lijn;
+}
+
+.rond {
+  grid-area: rond;
+}
+
+.balk {
+  grid-area: balk; 
+}
+
+.SpaceXlogo {
+  max-width: 700px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+
+}
+
+
+.introbox {
+  background-color: #e2e2e2e7;
+  margin: auto;
+  padding: 20px;
+  height: 250px;
+  border: 1px solid rgb(2, 2, 2);
+  border-radius: 25px;;
+  font-size: 30px;
+}
+
+.introtext {
+  margin: 10px;
+}
+
+  /* opmaak charts eromheen */
+.linebox {
+  background-color: #8f8e8ee7;
+  margin: 20px;
+  padding: 20px;  
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1365){
+  body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+      "header header"
+      "rond rond"
+      "balk balk"
+      "lijn lijn";  
+  }
+/*Het werkt niet*/
+
+}
+
+
+@media only screen and (min-width:1366px) and (max-width: 1919px) {
+
+  body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+      "header header"
+      "lijn lijn"
+      "rond balk";
+  }
+}
+
+
+
+
+@media only screen and (min-width:1920px)  {
+ body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas: 
+      "header lijn"
+      "rond balk";
+  }
+
+
+}
